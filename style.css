@@ -1,0 +1,32 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Times New Roman', Times, serif;
+    line-height:1.6;
+    background:whitesmoke;
+}
+nav{
+    color:black;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding: 10px 20px;
+}
+nav ul{
+    display:flex;
+    list-style:none;
+    gap:25px;
+}
+
+nav a{
+    color:black;
+    text-decoration:none;
+}
+
+nav a:hover{
+    font-weight: bold;
+}
