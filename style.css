@@ -78,3 +78,17 @@ section h2{
 #about{
     background-color:#0096 ;
 }
+
+.skills{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:15px;
+}
+
+.skills div{
+    background:wheat;
+    color:black;
+    padding:12px 20px;
+    border-radius:20px;
+}
