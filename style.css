@@ -2,6 +2,7 @@
     margin:0;
     padding:0;
     box-sizing:border-box;
+    overscroll-behavior: none;
 }
 
 body{
@@ -92,8 +93,36 @@ section h2{
     padding:12px 20px;
     border-radius:20px;
 }
+#projects{
+    background-color:#0096
+}
+
+.projects{
+    display:flex;
+    gap:20px;
+    justify-content:center;
+    flex-wrap:wrap;
+}
+
+.card{
+    width:280px;
+    background:wheat;
+    padding:20px;
+    border-radius:10px;
+    box-shadow:0 0 10px rgba(0,0,0,.2);
+}
+
+.card h3{
+    margin-bottom:10px;
+}
 
 #contact{
     text-align:center;
-    background-color:#0096
+}
+
+footer{
+    background:#222;
+    color:white;
+    text-align:center;
+    padding:20px;
 }
