@@ -1,100 +1,229 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Abhishek Pillai</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Abhishek Pillai — Java & Backend Developer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
+<body>
 
-<body> 
-<!--Navigation Bar-->
+<div class="scanline" aria-hidden="true"></div>
+
+<!-- Navigation -->
 <nav>
-    <h2> My Portfolio</h2>
-    <ul>
-        <li><a href="#home">Home</a> </li>
-        <li> <a href="#about">About</a> </li>
-        <li> <a href="#skills">Skills</a> </li>
-        <li> <a href="#projects">Projects</a> </li>
-        <li> <a href="#contact">Contact</a> </li>
+  <div class="nav-inner">
+    <a href="#home" class="logo"><span class="dot"></span>abhishek<span class="accent">.dev</span></a>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <ul id="navList">
+      <li><a href="#home">home</a></li>
+      <li><a href="#about">about</a></li>
+      <li><a href="#skills">skills</a></li>
+      <li><a href="#projects">projects</a></li>
+      <li><a href="#contact">contact</a></li>
     </ul>
+  </div>
 </nav>
 
-<section id="home">
-    <div>
-        <img src="Abhishek_Pillai.jpg" alt="Profile Photo">
+<!-- Hero -->
+<section id="home" class="hero">
+  <div class="hero-grid">
+    <div class="hero-text">
+      <p class="eyebrow">// backend &amp; full-stack developer</p>
+      <h1>Abhishek Pillai</h1>
+      <p class="hero-sub">I build clean, well-structured software — from Java backends to the systems that keep them running.</p>
+      <div class="hero-actions">
+        <a href="Abhishek_Pillai_Resume_.pdf" target="_blank" class="btn btn-primary">Download résumé</a>
+        <a href="#projects" class="btn btn-ghost">View projects</a>
+      </div>
+      <div class="hero-links">
+        <a href="https://github.com/abhi-pillai" target="_blank" rel="noopener">GitHub ↗</a>
+        <a href="https://www.linkedin.com/in/abhishek-pillai-196b16254/" target="_blank" rel="noopener">LinkedIn ↗</a>
+        <a href="mailto:12a.abhishekpillai@gmail.com">Email ↗</a>
+      </div>
     </div>
-    <div>
-        <h3> Hi, I'm Abhishek Pillai</h3>
-        <p> Java Developer | Problem Solver | Full Stack Developer</p>
+
+    <div class="terminal" role="img" aria-label="Terminal window showing developer profile summary">
+      <div class="terminal-bar">
+        <span class="tdot red"></span><span class="tdot yellow"></span><span class="tdot green"></span>
+        <span class="terminal-title">profile.java</span>
+      </div>
+      <pre class="terminal-body"><code><span class="tk">public class</span> <span class="tc">Developer</span> {
+
+    <span class="tk">private</span> String name = <span class="ts">"Abhishek Pillai"</span>;
+    <span class="tk">private</span> String role = <span class="ts">"Java / Full Stack Dev"</span>;
+    <span class="tk">private</span> String[] stack = {
+        <span class="ts">"Java"</span>, <span class="ts">"Spring Boot"</span>,
+        <span class="ts">"REST APIs"</span>, <span class="ts">"JavaScript"</span>
+    };
+
+    <span class="tk">public</span> String focus() {
+        <span class="tk">return</span> <span class="ts">"clean code, real systems"</span>;
+    }
+}</code></pre>
     </div>
-    <button><a href="Abhishek_Pillai_Resume_.pdf" target="_blank"> Download Resume </a></button>
+  </div>
 </section>
+
+<!-- About -->
 <section id="about">
-    <h2> About Me</h2>
-    <p>
-        I'm passionate about solving problems through technology and continuously improving my skills as a software developer. I enjoy understanding how systems work, writing clean and maintainable code, and learning the concepts behind modern software development rather than just using tools.
-    </p>
-
-    <p>
-        Curiosity drives the way I learn. I believe consistent practice, disciplined learning, and a willingness to explore new technologies are the foundation of becoming a better engineer. Whether it's strengthening programming fundamentals, exploring backend development, or understanding computer science concepts in depth, I enjoy the process of learning and applying knowledge.
-    </p>
-    <p>
-        I'm always looking for opportunities to collaborate, learn from experienced professionals, and contribute to meaningful software that creates real value. My goal is to keep growing as a developer while building a strong foundation in software engineering and problem-solving.
-    </p>
+  <p class="section-label">// 01</p>
+  <h2>About</h2>
+  <div class="about-grid">
+    <div class="about-text">
+      <p>I'm a Computer Science &amp; Engineering graduate who enjoys understanding how systems actually work — not just using the tools, but knowing what's happening underneath. I write clean, maintainable code and treat every project as a chance to get better at software engineering.</p>
+      <p>My learning is driven by curiosity and consistency. Whether that's strengthening core programming fundamentals, going deeper into backend development with Spring Boot, or exploring computer science concepts properly, I'd rather understand the "why" than memorize the "how."</p>
+      <p>I'm actively looking for opportunities to work alongside experienced engineers, contribute to software that creates real value, and keep building a strong foundation as a developer.</p>
+    </div>
+    <div class="about-stats">
+      <div class="stat"><span class="stat-num">5+</span><span class="stat-label">projects shipped</span></div>
+      <div class="stat"><span class="stat-num">CS</span><span class="stat-label">engineering grad</span></div>
+      <div class="stat"><span class="stat-num">Java</span><span class="stat-label">primary language</span></div>
+    </div>
+  </div>
 </section>
 
+<!-- Skills -->
 <section id="skills">
+  <p class="section-label">// 02</p>
+  <h2>Skills</h2>
 
-        <h2>Skills</h2>
+  <div class="skills-grid">
+    <div class="skill-cat">
+      <h3>Languages</h3>
+      <div class="tags">
+        <span>Java</span><span>Python</span><span>C</span><span>JavaScript</span>
+      </div>
+    </div>
+    <div class="skill-cat">
+      <h3>Backend</h3>
+      <div class="tags">
+        <span>Spring Boot</span><span>REST APIs</span><span>Gradle</span><span>Maven</span>
+      </div>
+    </div>
+    <div class="skill-cat">
+      <h3>Frontend</h3>
+      <div class="tags">
+        <span>HTML</span><span>CSS</span><span>JavaScript</span>
+      </div>
+    </div>
+    <div class="skill-cat">
+      <h3>Data &amp; Tools</h3>
+      <div class="tags">
+        <span>MySQL</span><span>Git</span><span>GitHub</span><span>Docker</span><span>Postman</span>
+      </div>
+    </div>
+  </div>
+</section>
 
-        <div class="skills">
-            <div>HTML</div>
-            <div>CSS</div>
-            <div>JavaScript</div>
-            <div>Java</div>
-            <div>Spring Boot</div>
-            <div>Git</div>
-        </div>
+<!-- Projects -->
+<section id="projects">
+  <p class="section-label">// 03</p>
+  <h2>Projects</h2>
 
-    </section>
+  <div class="projects">
+    <article class="card">
+      <div class="card-head">
+        <h3>Decision Companion System</h3>
+        <span class="card-tag">Java · Spring Boot</span>
+      </div>
+      <p>A transparent decision-support tool that ranks alternatives using Multi-Criteria Decision Making techniques — Weighted Sum Model and TOPSIS.</p>
+      <div class="card-stack"><span>Java 21</span><span>Spring Boot</span><span>Gradle</span><span>Docker</span></div>
+      <a class="card-link" href="https://github.com/abhi-pillai/Decision_Companion_System" target="_blank" rel="noopener">View on GitHub →</a>
+    </article>
 
-    <section id="projects">
-        <h2>Projects</h2>
+    <article class="card">
+      <div class="card-head">
+        <h3>TrackIt</h3>
+        <span class="card-tag">Java · Desktop</span>
+      </div>
+      <p>An offline personal-finance desktop app for tracking income, expenses, and budgets, with generated reports.</p>
+      <div class="card-stack"><span>Java 21</span><span>Java Swing</span><span>OpenCSV</span><span>OpenPDF</span></div>
+      <a class="card-link" href="https://github.com/abhi-pillai/First_Gradle_Project" target="_blank" rel="noopener">View on GitHub →</a>
+    </article>
 
-        <div class="projects">
+    <article class="card">
+      <div class="card-head">
+        <h3>Heart Attack Prediction &amp Alert System</h3>
+        <span class="card-tag">IoT · Python</span>
+      </div>
+      <p>An IoT-based healthcare project that predicts heart-attack risk from sensor data and sends real-time alerts.</p>
+      <div class="card-stack"><span>IoT</span><span>Flask</span><span>Python</span></div>
+      <a class="card-link" href="https://github.com/abhi-pillai/alsys" target="_blank" rel="noopener">View on GitHub →</a>
+    </article>
 
-            <div class="card">
-                <h3>Decision Companion System</h3>
-                <p>A transparent decision tool that ranks options based on your priorities.</p>
-            </div>
+    <article class="card">
+      <div class="card-head">
+        <h3>Cryptify</h3>
+        <span class="card-tag">Java · Security</span>
+      </div>
+      <p>A file and data encryption application built to explore practical cybersecurity and secure data handling.</p>
+      <div class="card-stack"><span>Java</span></div>
+      <a class="card-link" href="https://github.com/abhi-pillai/Cryptify_New" target="_blank" rel="noopener">View on GitHub →</a>
+    </article>
 
-            <div class="card">
-                <h3>Alarm Clock</h3>
-                <p>A desktop alarm clock application built with pure Java and JavaFX.</p>
-            </div>
+    <article class="card">
+      <div class="card-head">
+        <h3>Emotion Detector</h3>
+        <span class="card-tag">Python · AI</span>
+      </div>
+      <p>A text-based emotion detection app that analyzes input and identifies emotional states using the Gemini API.</p>
+      <div class="card-stack"><span>Python</span><span>Flask</span><span>Gemini API</span></div>
+      <a class="card-link" href="https://github.com/abhi-pillai/Emotion_Detector" target="_blank" rel="noopener">View on GitHub →</a>
+    </article>
+  </div>
+</section>
 
-            <div class="card">
-                <h3>TrackIt</h3>
-                <p>A personal finance desktop application built with Java Swing.</p>
-            </div>
+<!-- Contact -->
+<section id="contact">
+  <p class="section-label">// 04</p>
+  <h2>Contact</h2>
+  <p class="contact-sub">Open to backend and full-stack roles — always happy to talk about Java, systems, or a project idea.</p>
 
-        </div>
-    </section>
+  <div class="contact-grid">
+    <a class="contact-card" href="mailto:12a.abhishekpillai@gmail.com">
+      <span class="contact-label">Email</span>
+      <span class="contact-value">12a.abhishekpillai@gmail.com</span>
+    </a>
+    <a class="contact-card" href="https://www.linkedin.com/in/abhishek-pillai-196b16254/" target="_blank" rel="noopener">
+      <span class="contact-label">LinkedIn</span>
+      <span class="contact-value">abhishek-pillai-196b16254</span>
+    </a>
+    <a class="contact-card" href="https://github.com/abhi-pillai" target="_blank" rel="noopener">
+      <span class="contact-label">GitHub</span>
+      <span class="contact-value">abhi-pillai</span>
+    </a>
+  </div>
+</section>
 
-    <section id="contact">
+<footer>
+  <p>© 2026 Abhishek Pillai.</p>
+</footer>
 
-        <h2>Contact</h2>
+<script>
+  const toggle = document.getElementById('navToggle');
+  const list = document.getElementById('navList');
+  toggle.addEventListener('click', () => {
+    const open = list.classList.toggle('open');
+    toggle.setAttribute('aria-expanded', open);
+  });
+  list.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+    list.classList.remove('open');
+    toggle.setAttribute('aria-expanded', false);
+  }));
 
-        <p>Email: 12a.abhishekpillai@gmail.com</p>
-
-        <p>LinkedIn: linkedin.com/in/abhishek-pillai-196b16254</p>
-
-        <p>GitHub: github.com/abhi-pillai</p>
-
-    </section>
-    <footer>
-        <p>© 2026 Abhishek Pillai. All Rights Reserved.</p>
-    </footer>
+  if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    const revealEls = document.querySelectorAll('section, .card, .stat');
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in-view'); io.unobserve(e.target); } });
+    }, { threshold: 0.12 });
+    revealEls.forEach(el => { el.classList.add('reveal'); io.observe(el); });
+  }
+</script>
 </body>
 </html>
